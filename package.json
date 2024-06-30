@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "dev": "farm",
+    "build": "tsc --noEmit && farm build",
+    "preview": "farm preview"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^1.0.14",
+    "@types/chrome": "^0.0.268",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "@farmfe/cli": "^1.0.2",
+    "@farmfe/core": "^1.2.4",
+    "vite": "^5.3.2"
+  }
+}
