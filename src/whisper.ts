@@ -1,5 +1,5 @@
 // https://github.com/xenova/transformers.js/blob/v3/examples/webgpu-whisper/src/worker.js
-// xenova/transformers.jsより
+// xenova/transformers.jsより引用
 import {
     AutoTokenizer,
     AutoProcessor,
@@ -44,7 +44,7 @@ export class AutomaticSpeechRecognitionPipeline {
 }
 
 let processing = false;
-async function generate({ audio, language }) {
+export async function generate({ audio, language }) {
     if (processing) return;
     processing = true;
 
@@ -94,7 +94,7 @@ async function generate({ audio, language }) {
     processing = false;
 }
 
-async function load() {
+export async function load() {
     self.postMessage({
         status: 'loading',
         data: 'Loading model...'

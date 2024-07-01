@@ -27,6 +27,9 @@ const manifest = defineManifest({
     service_worker: 'src/background.ts', // 拡張子を .ts に変更する
     type: 'module',
   },
+  action: {
+    "default_popup": "src/popup/popup.html",
+  },
 })
 
 export default defineConfig({

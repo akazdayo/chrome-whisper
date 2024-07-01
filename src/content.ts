@@ -1,2 +1,2 @@
-import { AutomaticSpeechRecognitionPipeline } from "./whisper";
+import {AutomaticSpeechRecognitionPipeline, load, generate} from './whisper.ts';
 
