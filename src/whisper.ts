@@ -1,4 +1,5 @@
-
+// https://github.com/xenova/transformers.js/blob/v3/examples/webgpu-whisper/src/worker.js
+// xenova/transformers.jsより
 import {
     AutoTokenizer,
     AutoProcessor,
