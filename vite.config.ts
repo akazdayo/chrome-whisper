@@ -1,4 +1,4 @@
-import { defineConfig } from '@farmfe/core';
+import { defineConfig } from 'vite';
 import { crx, defineManifest } from '@crxjs/vite-plugin'
 
 const manifest = defineManifest({
@@ -23,8 +23,12 @@ const manifest = defineManifest({
       ]
     }
   ],
+  background: {
+    service_worker: 'src/background.ts', // 拡張子を .ts に変更する
+    type: 'module',
+  },
 })
 
 export default defineConfig({
-  plugins: [crx({ manifest })] as JsPlugin[],
+  plugins: [crx({ manifest })],
 })
